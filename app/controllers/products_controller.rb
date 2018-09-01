@@ -3,6 +3,7 @@ class ProductsController < ApplicationController
 
   # GET /products
   def index
+    @current_time = Time.zone.now
     @products = Product.all
   end
 
